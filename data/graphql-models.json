@@ -1,0 +1,2732 @@
+{
+  "nodes": [
+    {
+      "id": "LeagueInvite",
+      "label": "LeagueInvite",
+      "type": "graphqlType",
+      "domain": "Commissioner",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "RemoveLeagueResponse",
+      "label": "RemoveLeagueResponse",
+      "type": "graphqlType",
+      "domain": "Commissioner",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NewLeagueNotificationResponse",
+      "label": "NewLeagueNotificationResponse",
+      "type": "graphqlType",
+      "domain": "Commissioner",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "UpdateRejectedInviteResponse",
+      "label": "UpdateRejectedInviteResponse",
+      "type": "graphqlType",
+      "domain": "Commissioner",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Query_invitesByLeague",
+      "label": "invitesByLeague",
+      "type": "graphqlQuery",
+      "domain": "Commissioner",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "LeagueInvite"
+    },
+    {
+      "id": "Mutation_respondToLeagueInvite",
+      "label": "respondToLeagueInvite",
+      "type": "graphqlMutation",
+      "domain": "Commissioner",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "LeagueInvite"
+    },
+    {
+      "id": "Mutation_removeLeague",
+      "label": "removeLeague",
+      "type": "graphqlMutation",
+      "domain": "Commissioner",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "RemoveLeagueResponse,"
+    },
+    {
+      "id": "Mutation_respondToNewLeagueCommissionerMessage",
+      "label": "respondToNewLeagueCommissionerMessage",
+      "type": "graphqlMutation",
+      "domain": "Commissioner",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "NewLeagueNotificationResponse,"
+    },
+    {
+      "id": "Mutation_updateLeagueInvitationEmail",
+      "label": "updateLeagueInvitationEmail",
+      "type": "graphqlMutation",
+      "domain": "Commissioner",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "UpdateRejectedInviteResponse"
+    },
+    {
+      "id": "League",
+      "label": "League",
+      "type": "graphqlType",
+      "domain": "Leagues",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "TargetLeague",
+      "label": "TargetLeague",
+      "type": "graphqlEnum",
+      "domain": "Leagues",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "PLL",
+        "NLL",
+        "NCAA"
+      ]
+    },
+    {
+      "id": "Query_leagues",
+      "label": "leagues",
+      "type": "graphqlQuery",
+      "domain": "Leagues",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "League,"
+    },
+    {
+      "id": "Query_leagueById",
+      "label": "leagueById",
+      "type": "graphqlQuery",
+      "domain": "Leagues",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "League,"
+    },
+    {
+      "id": "Query_publicLeaguesAvailableToJoin",
+      "label": "publicLeaguesAvailableToJoin",
+      "type": "graphqlQuery",
+      "domain": "Leagues",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "League"
+    },
+    {
+      "id": "Mutation_addLeague",
+      "label": "addLeague",
+      "type": "graphqlMutation",
+      "domain": "Leagues",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "League"
+    },
+    {
+      "id": "Subscription",
+      "label": "Subscription",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftTimeNotificationResponse",
+      "label": "DraftTimeNotificationResponse",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Season",
+      "label": "Season",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "TeamLetterMap",
+      "label": "TeamLetterMap",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Draft",
+      "label": "Draft",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "SetDraftStartTimeResponse",
+      "label": "SetDraftStartTimeResponse",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftStatus",
+      "label": "DraftStatus",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "TeamLetterMapOrder",
+      "label": "TeamLetterMapOrder",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftPick",
+      "label": "DraftPick",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "ActiveDraftState",
+      "label": "ActiveDraftState",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "ActiveDraftMap",
+      "label": "ActiveDraftMap",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftPickResponse",
+      "label": "DraftPickResponse",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftPauseResponse",
+      "label": "DraftPauseResponse",
+      "type": "graphqlType",
+      "domain": "LiveDraft",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "SeasonConfiguration",
+      "label": "SeasonConfiguration",
+      "type": "graphqlEnum",
+      "domain": "LiveDraft",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "PLL4",
+        "PLL8"
+      ]
+    },
+    {
+      "id": "Date",
+      "label": "Date",
+      "type": "graphqlScalar",
+      "domain": "LiveDraft",
+      "color": "#95E1D3",
+      "size": 4
+    },
+    {
+      "id": "JSON",
+      "label": "JSON",
+      "type": "graphqlScalar",
+      "domain": "LiveDraft",
+      "color": "#95E1D3",
+      "size": 4
+    },
+    {
+      "id": "Query_getDraftSchedules",
+      "label": "getDraftSchedules",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "DraftStatus"
+    },
+    {
+      "id": "Query_getDraftByLeagueId",
+      "label": "getDraftByLeagueId",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Draft"
+    },
+    {
+      "id": "Query_availableDraftPlayerPool",
+      "label": "availableDraftPlayerPool",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Player"
+    },
+    {
+      "id": "Query_getDraftPicks",
+      "label": "getDraftPicks",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "DraftPick"
+    },
+    {
+      "id": "Query_draftPicksByLeagueId",
+      "label": "draftPicksByLeagueId",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "DraftPick"
+    },
+    {
+      "id": "Query_draftPicksByTeamId",
+      "label": "draftPicksByTeamId",
+      "type": "graphqlQuery",
+      "domain": "LiveDraft",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "DraftPick"
+    },
+    {
+      "id": "Mutation_setDraftStartTime",
+      "label": "setDraftStartTime",
+      "type": "graphqlMutation",
+      "domain": "LiveDraft",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "SetDraftStartTimeResponse,"
+    },
+    {
+      "id": "Mutation_respondToDraftTimeNotification",
+      "label": "respondToDraftTimeNotification",
+      "type": "graphqlMutation",
+      "domain": "LiveDraft",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "DraftTimeNotificationResponse"
+    },
+    {
+      "id": "Mutation_pickPlayer",
+      "label": "pickPlayer",
+      "type": "graphqlMutation",
+      "domain": "LiveDraft",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "DraftPickResponse"
+    },
+    {
+      "id": "Mutation_pauseDraft",
+      "label": "pauseDraft",
+      "type": "graphqlMutation",
+      "domain": "LiveDraft",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "DraftPauseResponse"
+    },
+    {
+      "id": "Mutation_resumeDraft",
+      "label": "resumeDraft",
+      "type": "graphqlMutation",
+      "domain": "LiveDraft",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "DraftPauseResponse"
+    },
+    {
+      "id": "Message",
+      "label": "Message",
+      "type": "graphqlType",
+      "domain": "Messages",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DraftTimeNotification",
+      "label": "DraftTimeNotification",
+      "type": "graphqlType",
+      "domain": "Messages",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "LeagueInviteMessage",
+      "label": "LeagueInviteMessage",
+      "type": "graphqlType",
+      "domain": "Messages",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NewLeagueCommissionerNotice",
+      "label": "NewLeagueCommissionerNotice",
+      "type": "graphqlType",
+      "domain": "Messages",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "FullLeagueNotice",
+      "label": "FullLeagueNotice",
+      "type": "graphqlType",
+      "domain": "Messages",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "InvitationStatus",
+      "label": "InvitationStatus",
+      "type": "graphqlEnum",
+      "domain": "Messages",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "PENDING",
+        "ACCEPTED",
+        "REJECTED"
+      ]
+    },
+    {
+      "id": "Query_messages",
+      "label": "messages",
+      "type": "graphqlQuery",
+      "domain": "Messages",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Message,"
+    },
+    {
+      "id": "Player",
+      "label": "Player",
+      "type": "graphqlType",
+      "domain": "PlayerStats",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Statistics",
+      "label": "Statistics",
+      "type": "graphqlType",
+      "domain": "PlayerStats",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "StatLine",
+      "label": "StatLine",
+      "type": "graphqlType",
+      "domain": "PlayerStats",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NLLStatLine",
+      "label": "NLLStatLine",
+      "type": "graphqlType",
+      "domain": "PlayerStats",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "PlayerOrder",
+      "label": "PlayerOrder",
+      "type": "graphqlInput",
+      "domain": "PlayerStats",
+      "color": "#4ECDC4",
+      "size": 8
+    },
+    {
+      "id": "FlexQuery",
+      "label": "FlexQuery",
+      "type": "graphqlInput",
+      "domain": "PlayerStats",
+      "color": "#4ECDC4",
+      "size": 8
+    },
+    {
+      "id": "StatLineInput",
+      "label": "StatLineInput",
+      "type": "graphqlInput",
+      "domain": "PlayerStats",
+      "color": "#4ECDC4",
+      "size": 8
+    },
+    {
+      "id": "SortingOrder",
+      "label": "SortingOrder",
+      "type": "graphqlEnum",
+      "domain": "PlayerStats",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "ASC",
+        "DESC"
+      ]
+    },
+    {
+      "id": "RosterPositionFilter",
+      "label": "RosterPositionFilter",
+      "type": "graphqlEnum",
+      "domain": "PlayerStats",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "ALL",
+        "BENCH",
+        "GOALIE",
+        "DEFENSE",
+        "LSM",
+        "SSDM",
+        "FO",
+        "MIDFIELD",
+        "ATTACK",
+        "FORWARD",
+        "TRANSITION",
+        "FACEOFF"
+      ]
+    },
+    {
+      "id": "PlayerSortField",
+      "label": "PlayerSortField",
+      "type": "graphqlEnum",
+      "domain": "PlayerStats",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "lastName",
+        "position",
+        "points",
+        "goals",
+        "assists",
+        "groundBalls",
+        "causedTurnovers",
+        "saves",
+        "faceoffsWon"
+      ]
+    },
+    {
+      "id": "Query_players",
+      "label": "players",
+      "type": "graphqlQuery",
+      "domain": "PlayerStats",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Player"
+    },
+    {
+      "id": "Mutation_addStatLineForWeek",
+      "label": "addStatLineForWeek",
+      "type": "graphqlMutation",
+      "domain": "PlayerStats",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "StatLine"
+    },
+    {
+      "id": "PLLRoster",
+      "label": "PLLRoster",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NLLRoster",
+      "label": "NLLRoster",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NCAARoster",
+      "label": "NCAARoster",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "RosterIDs",
+      "label": "RosterIDs",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "NLLRosterIDs",
+      "label": "NLLRosterIDs",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "MovePlayersResponse",
+      "label": "MovePlayersResponse",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "DropPlayersResponse",
+      "label": "DropPlayersResponse",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "AssignPlayersResponse",
+      "label": "AssignPlayersResponse",
+      "type": "graphqlType",
+      "domain": "Roster",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "PlayerInput",
+      "label": "PlayerInput",
+      "type": "graphqlInput",
+      "domain": "Roster",
+      "color": "#4ECDC4",
+      "size": 8
+    },
+    {
+      "id": "RosterSpot",
+      "label": "RosterSpot",
+      "type": "graphqlEnum",
+      "domain": "Roster",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "GOALIE",
+        "DEFENSE1",
+        "DEFENSE2",
+        "LSM",
+        "SSDM",
+        "FO",
+        "MIDFIELD1",
+        "MIDFIELD2",
+        "ATTACK1",
+        "ATTACK2",
+        "BENCH1",
+        "BENCH2",
+        "BENCH3",
+        "BENCH4",
+        "FORWARD1",
+        "FORWARD2",
+        "TRANSITION1",
+        "TRANSITION2",
+        "FACEOFF"
+      ]
+    },
+    {
+      "id": "NLLRosterSpot",
+      "label": "NLLRosterSpot",
+      "type": "graphqlEnum",
+      "domain": "Roster",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": []
+    },
+    {
+      "id": "Position",
+      "label": "Position",
+      "type": "graphqlEnum",
+      "domain": "Roster",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": [
+        "G",
+        "D",
+        "LSM",
+        "SSDM",
+        "FO",
+        "M",
+        "A",
+        "F",
+        "T",
+        "FACEOFF"
+      ]
+    },
+    {
+      "id": "NLLPosition",
+      "label": "NLLPosition",
+      "type": "graphqlEnum",
+      "domain": "Roster",
+      "color": "#FFE66D",
+      "size": 6,
+      "values": []
+    },
+    {
+      "id": "Query_roster",
+      "label": "roster",
+      "type": "graphqlQuery",
+      "domain": "Roster",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Roster"
+    },
+    {
+      "id": "Mutation_assignPlayerNewRosterSpot",
+      "label": "assignPlayerNewRosterSpot",
+      "type": "graphqlMutation",
+      "domain": "Roster",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "AssignPlayersResponse,"
+    },
+    {
+      "id": "Mutation_movePlayers",
+      "label": "movePlayers",
+      "type": "graphqlMutation",
+      "domain": "Roster",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "MovePlayersResponse,"
+    },
+    {
+      "id": "Mutation_swapPlayers",
+      "label": "swapPlayers",
+      "type": "graphqlMutation",
+      "domain": "Roster",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "Roster,"
+    },
+    {
+      "id": "Mutation_addPlayerToTeamRoster",
+      "label": "addPlayerToTeamRoster",
+      "type": "graphqlMutation",
+      "domain": "Roster",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "Roster,"
+    },
+    {
+      "id": "Mutation_removePlayerFromTeamRoster",
+      "label": "removePlayerFromTeamRoster",
+      "type": "graphqlMutation",
+      "domain": "Roster",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "Roster"
+    },
+    {
+      "id": "SeasonWeekDateInterval",
+      "label": "SeasonWeekDateInterval",
+      "type": "graphqlType",
+      "domain": "Season",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "WeeklyMatchup",
+      "label": "WeeklyMatchup",
+      "type": "graphqlType",
+      "domain": "Season",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "WeeklySchedule",
+      "label": "WeeklySchedule",
+      "type": "graphqlType",
+      "domain": "Season",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Query_seasonWeekDateIntervals",
+      "label": "seasonWeekDateIntervals",
+      "type": "graphqlQuery",
+      "domain": "Season",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "SeasonWeekDateInterval"
+    },
+    {
+      "id": "Query_fetchWeeklySchedule",
+      "label": "fetchWeeklySchedule",
+      "type": "graphqlQuery",
+      "domain": "Season",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "WeeklySchedule"
+    },
+    {
+      "id": "Team",
+      "label": "Team",
+      "type": "graphqlType",
+      "domain": "Team",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "RemoveTeamResponse",
+      "label": "RemoveTeamResponse",
+      "type": "graphqlType",
+      "domain": "Team",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Query_teams",
+      "label": "teams",
+      "type": "graphqlQuery",
+      "domain": "Team",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Team,"
+    },
+    {
+      "id": "Query_teamById",
+      "label": "teamById",
+      "type": "graphqlQuery",
+      "domain": "Team",
+      "color": "#A8E6CF",
+      "size": 10,
+      "returnType": "Team"
+    },
+    {
+      "id": "Mutation_addTeam",
+      "label": "addTeam",
+      "type": "graphqlMutation",
+      "domain": "Team",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "Team,"
+    },
+    {
+      "id": "Mutation_removeTeam",
+      "label": "removeTeam",
+      "type": "graphqlMutation",
+      "domain": "Team",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "RemoveTeamResponse,"
+    },
+    {
+      "id": "User",
+      "label": "User",
+      "type": "graphqlType",
+      "domain": "UserProfile",
+      "color": "#FF6B6B",
+      "size": 12
+    },
+    {
+      "id": "Mutation_findOrCreateUser",
+      "label": "findOrCreateUser",
+      "type": "graphqlMutation",
+      "domain": "UserProfile",
+      "color": "#DDA0DD",
+      "size": 10,
+      "returnType": "User,"
+    },
+    {
+      "id": "ActivePlayersForLeagues",
+      "label": "ActivePlayersForLeagues",
+      "type": "sequelizeModel",
+      "tableName": "ActivePlayersForLeagues",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "playerId",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "\"G\" | \"D\" | \"LSM\" | \"SSDM\" | \"FO\" | \"M\" | \"A\" | \"T\" | \"F\""
+        },
+        {
+          "name": "rosterSpot",
+          "type": "\"GOALIE\" | \"DEFENSE1\" | \"DEFENSE2\" | \"LSM\" | \"SSDM\" | \"FO\" | \"MIDFIELD1\" | \"MIDFIELD2\" | \"ATTACK1\" | \"ATTACK2\" | \"BENCH1\" | \"BENCH2\" | \"BENCH3\" | \"BENCH4\" | \"FACEOFF\" | \"TRANSITION1\" | \"TRANSITION2\" | \"FORWARD1\" | \"FORWARD2\""
+        },
+        {
+          "name": "rosterId",
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\""
+        }
+      ]
+    },
+    {
+      "id": "DraftPicks",
+      "label": "DraftPicks",
+      "type": "sequelizeModel",
+      "tableName": "DraftPicks",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "draftId",
+          "type": "string"
+        },
+        {
+          "name": "pickNumber",
+          "type": "number"
+        },
+        {
+          "name": "playerId",
+          "type": "number"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\""
+        },
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "rosterSpot",
+          "type": "\"GOALIE\" | \"DEFENSE1\" | \"DEFENSE2\" | \"LSM\" | \"SSDM\" | \"FO\" | \"MIDFIELD1\" | \"MIDFIELD2\" | \"ATTACK1\" | \"ATTACK2\" | \"BENCH1\" | \"BENCH2\" | \"BENCH3\" | \"BENCH4\" | \"FACEOFF\" | \"TRANSITION1\" | \"TRANSITION2\" | \"FORWARD1\" | \"FORWARD2\""
+        }
+      ]
+    },
+    {
+      "id": "DraftTimeNotifications",
+      "label": "DraftTimeNotifications",
+      "type": "sequelizeModel",
+      "tableName": "DraftTimeNotifications",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "type": "string"
+        },
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "draftTime",
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "Drafts",
+      "label": "Drafts",
+      "type": "sequelizeModel",
+      "tableName": "Drafts",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "draftStartTime",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "seasonId",
+          "type": "string"
+        },
+        {
+          "name": "teamCount",
+          "type": "number"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\" | \"NOLEAGUE\""
+        },
+        {
+          "name": "timeOfLastPick",
+          "type": "Date"
+        },
+        {
+          "name": "complete",
+          "type": "boolean"
+        },
+        {
+          "name": "clockStart",
+          "type": "number"
+        },
+        {
+          "name": "clockExpire",
+          "type": "number"
+        },
+        {
+          "name": "activeDraftRound",
+          "type": "number"
+        },
+        {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
+          "name": "numberOfRounds",
+          "type": "number"
+        },
+        {
+          "name": "currentPickNumber",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "FullLeagueNotifications",
+      "label": "FullLeagueNotifications",
+      "type": "sequelizeModel",
+      "tableName": "FullLeagueNotifications",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "leagueTitle",
+          "type": "string"
+        },
+        {
+          "name": "commissionerId",
+          "type": "string"
+        },
+        {
+          "name": "fullTeamCount",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "commissionerTeamID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "LeagueInvites",
+      "label": "LeagueInvites",
+      "type": "sequelizeModel",
+      "tableName": "LeagueInvites",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "type": "string"
+        },
+        {
+          "name": "invitationStatus",
+          "type": "\"PENDING\" | \"ACCEPTED\" | \"REJECTED\""
+        },
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "leagueTitle",
+          "type": "string"
+        },
+        {
+          "name": "commissionerEmail",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "Leagues",
+      "label": "Leagues",
+      "type": "sequelizeModel",
+      "tableName": "Leagues",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "commissionerId",
+          "type": "string"
+        },
+        {
+          "name": "commissionerPrefUserName",
+          "type": "string"
+        },
+        {
+          "name": "commissionerEmail",
+          "type": "string"
+        },
+        {
+          "name": "teamCount",
+          "type": "string"
+        },
+        {
+          "name": "public",
+          "type": "boolean"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\" | \"OLYMPICS\""
+        }
+      ]
+    },
+    {
+      "id": "NllRosters",
+      "label": "NllRosters",
+      "type": "sequelizeModel",
+      "tableName": "NLLRosters",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "forward1ID",
+          "type": "number"
+        },
+        {
+          "name": "forward2ID",
+          "type": "number"
+        },
+        {
+          "name": "transition1ID",
+          "type": "number"
+        },
+        {
+          "name": "transition2ID",
+          "type": "number"
+        },
+        {
+          "name": "faceoffID",
+          "type": "number"
+        },
+        {
+          "name": "defense1ID",
+          "type": "number"
+        },
+        {
+          "name": "defense2ID",
+          "type": "number"
+        },
+        {
+          "name": "goalieID",
+          "type": "number"
+        },
+        {
+          "name": "bench1ID",
+          "type": "number"
+        },
+        {
+          "name": "bench2ID",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "id",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "NewLeagueCommissionerNotifications",
+      "label": "NewLeagueCommissionerNotifications",
+      "type": "sequelizeModel",
+      "tableName": "NewLeagueCommissionerNotifications",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "leagueTitle",
+          "type": "string"
+        },
+        {
+          "name": "commissionerId",
+          "type": "string"
+        },
+        {
+          "name": "commissionerEmail",
+          "type": "string"
+        },
+        {
+          "name": "numberOfTeams",
+          "type": "number"
+        },
+        {
+          "name": "publicLeague",
+          "type": "boolean"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "PllRosters",
+      "label": "PllRosters",
+      "type": "sequelizeModel",
+      "tableName": "PLLRosters",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "teamId",
+          "type": "number"
+        },
+        {
+          "name": "goalieID",
+          "type": "number"
+        },
+        {
+          "name": "defense1ID",
+          "type": "number"
+        },
+        {
+          "name": "defense2ID",
+          "type": "number"
+        },
+        {
+          "name": "midfield1ID",
+          "type": "number"
+        },
+        {
+          "name": "midfield2ID",
+          "type": "number"
+        },
+        {
+          "name": "foID",
+          "type": "number"
+        },
+        {
+          "name": "lsmID",
+          "type": "number"
+        },
+        {
+          "name": "attack1ID",
+          "type": "number"
+        },
+        {
+          "name": "attack2ID",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "bench1ID",
+          "type": "number"
+        },
+        {
+          "name": "bench2ID",
+          "type": "number"
+        },
+        {
+          "name": "bench3ID",
+          "type": "number"
+        },
+        {
+          "name": "bench4ID",
+          "type": "number"
+        },
+        {
+          "name": "ssdmID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "Players",
+      "label": "Players",
+      "type": "sequelizeModel",
+      "tableName": "Players",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "firstName",
+          "type": "string"
+        },
+        {
+          "name": "lastName",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "string"
+        },
+        {
+          "name": "jersey",
+          "type": "number"
+        },
+        {
+          "name": "team",
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\""
+        }
+      ]
+    },
+    {
+      "id": "Seasons",
+      "label": "Seasons",
+      "type": "sequelizeModel",
+      "tableName": "Seasons",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "seasonStartDate",
+          "type": "Date"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "seasonTemplate",
+          "type": "\"4Team10WeekSeason\" | \"6Team10WeekSeason\" | \"8Team10WeekSeason\" | \"DEFAULT_PLACEHOLDER\""
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\" | \"OLYMPICS\""
+        },
+        {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
+          "name": "year",
+          "type": "\"2024\" | \"2025\" | \"2026\" | \"2027\" | \"2024-2025\" | \"2025-2026\" | \"2026-2027\""
+        },
+        {
+          "name": "teamCount",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "StatLines",
+      "label": "StatLines",
+      "type": "sequelizeModel",
+      "tableName": "StatLines",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "playerId",
+          "type": "number"
+        },
+        {
+          "name": "statisticsId",
+          "type": "string"
+        },
+        {
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "name": "weekNumber",
+          "type": "number"
+        },
+        {
+          "name": "gamesPlayed",
+          "type": "number"
+        },
+        {
+          "name": "points",
+          "type": "number"
+        },
+        {
+          "name": "goals",
+          "type": "number"
+        },
+        {
+          "name": "assists",
+          "type": "number"
+        },
+        {
+          "name": "turnovers",
+          "type": "number"
+        },
+        {
+          "name": "causedTurnovers",
+          "type": "number"
+        },
+        {
+          "name": "groundBalls",
+          "type": "number"
+        },
+        {
+          "name": "faceoffsWon",
+          "type": "number"
+        },
+        {
+          "name": "faceoffAttempts",
+          "type": "number"
+        },
+        {
+          "name": "saves",
+          "type": "number"
+        },
+        {
+          "name": "goalsAgainst",
+          "type": "number"
+        },
+        {
+          "name": "penaltyMinutes",
+          "type": "number"
+        },
+        {
+          "name": "powerPlayGoals",
+          "type": "number"
+        },
+        {
+          "name": "shortHandedGoals",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\""
+        }
+      ]
+    },
+    {
+      "id": "Statistics",
+      "label": "Statistics",
+      "type": "sequelizeModel",
+      "tableName": "Statistics",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "playerId",
+          "type": "number"
+        },
+        {
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\""
+        }
+      ]
+    },
+    {
+      "id": "TeamLetterMaps",
+      "label": "TeamLetterMaps",
+      "type": "sequelizeModel",
+      "tableName": "TeamLetterMaps",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\""
+        },
+        {
+          "name": "year",
+          "type": "\"2024-2025\" | \"2025\" | \"2025-2026\" | \"2026\" | \"2026-2027\""
+        },
+        {
+          "name": "seasonId",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "teamA",
+          "type": "number"
+        },
+        {
+          "name": "teamB",
+          "type": "number"
+        },
+        {
+          "name": "teamC",
+          "type": "number"
+        },
+        {
+          "name": "teamD",
+          "type": "number"
+        },
+        {
+          "name": "teamE",
+          "type": "number"
+        },
+        {
+          "name": "teamF",
+          "type": "number"
+        },
+        {
+          "name": "teamG",
+          "type": "number"
+        },
+        {
+          "name": "teamH",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "Teams",
+      "label": "Teams",
+      "type": "sequelizeModel",
+      "tableName": "Teams",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "leagueId",
+          "type": "number"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        },
+        {
+          "name": "ownerId",
+          "type": "string"
+        },
+        {
+          "name": "ownerPrefUserName",
+          "type": "string"
+        },
+        {
+          "name": "leagueTitle",
+          "type": "string"
+        },
+        {
+          "name": "ownerEmail",
+          "type": "string"
+        },
+        {
+          "name": "targetLeague",
+          "type": "\"PLL\" | \"NLL\" | \"NCAA\" | \"OLYMPICS\""
+        }
+      ]
+    },
+    {
+      "id": "Users",
+      "label": "Users",
+      "type": "sequelizeModel",
+      "tableName": "Users",
+      "color": "#7B68EE",
+      "size": 14,
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "username",
+          "type": "string"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "leaguesOwned",
+          "type": "number[]"
+        },
+        {
+          "name": "teamsOwned",
+          "type": "number[]"
+        },
+        {
+          "name": "createdAt",
+          "type": "Date"
+        },
+        {
+          "name": "updatedAt",
+          "type": "Date"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "LeagueInvite",
+      "target": "InvitationStatus",
+      "label": "invitationStatus",
+      "type": "field"
+    },
+    {
+      "source": "UpdateRejectedInviteResponse",
+      "target": "LeagueInvite",
+      "label": "newInvite",
+      "type": "field"
+    },
+    {
+      "source": "Query_invitesByLeague",
+      "target": "LeagueInvite",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_respondToLeagueInvite",
+      "target": "LeagueInvite",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_respondToLeagueInvite",
+      "target": "InvitationStatus",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_updateLeagueInvitationEmail",
+      "target": "UpdateRejectedInviteResponse",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "League",
+      "target": "Team",
+      "label": "teams",
+      "type": "field"
+    },
+    {
+      "source": "League",
+      "target": "Season",
+      "label": "currentSeason",
+      "type": "field"
+    },
+    {
+      "source": "Query_publicLeaguesAvailableToJoin",
+      "target": "League",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_addLeague",
+      "target": "League",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "DraftTimeNotificationResponse",
+      "target": "DraftTimeNotification",
+      "label": "notification",
+      "type": "field"
+    },
+    {
+      "source": "Draft",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "SetDraftStartTimeResponse",
+      "target": "Draft",
+      "label": "draftData",
+      "type": "field"
+    },
+    {
+      "source": "DraftStatus",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "DraftStatus",
+      "target": "Team",
+      "label": "userOwnedTeam",
+      "type": "field"
+    },
+    {
+      "source": "DraftPick",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "DraftPick",
+      "target": "RosterSpot",
+      "label": "rosterSpot",
+      "type": "field"
+    },
+    {
+      "source": "DraftPick",
+      "target": "Team",
+      "label": "team",
+      "type": "field"
+    },
+    {
+      "source": "DraftPick",
+      "target": "Player",
+      "label": "player",
+      "type": "field"
+    },
+    {
+      "source": "ActiveDraftState",
+      "target": "DraftPick",
+      "label": "pickHistory",
+      "type": "field"
+    },
+    {
+      "source": "ActiveDraftState",
+      "target": "Team",
+      "label": "teamOnClock",
+      "type": "field"
+    },
+    {
+      "source": "ActiveDraftMap",
+      "target": "DraftPick",
+      "label": "pickHistory",
+      "type": "field"
+    },
+    {
+      "source": "DraftPauseResponse",
+      "target": "Draft",
+      "label": "draft",
+      "type": "field"
+    },
+    {
+      "source": "Query_getDraftSchedules",
+      "target": "DraftStatus",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_getDraftByLeagueId",
+      "target": "Draft",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_availableDraftPlayerPool",
+      "target": "Player",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_availableDraftPlayerPool",
+      "target": "Position",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_availableDraftPlayerPool",
+      "target": "PlayerOrder",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_getDraftPicks",
+      "target": "DraftPick",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_draftPicksByLeagueId",
+      "target": "DraftPick",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_draftPicksByTeamId",
+      "target": "DraftPick",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_respondToDraftTimeNotification",
+      "target": "DraftTimeNotificationResponse",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_pickPlayer",
+      "target": "DraftPickResponse",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_pickPlayer",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_pauseDraft",
+      "target": "DraftPauseResponse",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_resumeDraft",
+      "target": "DraftPauseResponse",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "DraftTimeNotification",
+      "target": "Draft",
+      "label": "draft",
+      "type": "field"
+    },
+    {
+      "source": "LeagueInviteMessage",
+      "target": "InvitationStatus",
+      "label": "invitationStatus",
+      "type": "field"
+    },
+    {
+      "source": "LeagueInviteMessage",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "FullLeagueNotice",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "Player",
+      "target": "Statistics",
+      "label": "statistics",
+      "type": "field"
+    },
+    {
+      "source": "Statistics",
+      "target": "StatLine",
+      "label": "statLineLastSeason",
+      "type": "field"
+    },
+    {
+      "source": "Query_players",
+      "target": "Player",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_players",
+      "target": "Position",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_players",
+      "target": "PlayerOrder",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_players",
+      "target": "RosterPositionFilter",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_addStatLineForWeek",
+      "target": "StatLine",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Mutation_addStatLineForWeek",
+      "target": "StatLineInput",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_addStatLineForWeek",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "PLLRoster",
+      "target": "Team",
+      "label": "teamInfo",
+      "type": "field"
+    },
+    {
+      "source": "PLLRoster",
+      "target": "Player",
+      "label": "bench1",
+      "type": "field"
+    },
+    {
+      "source": "NLLRoster",
+      "target": "Team",
+      "label": "teamInfo",
+      "type": "field"
+    },
+    {
+      "source": "NLLRoster",
+      "target": "Player",
+      "label": "bench1",
+      "type": "field"
+    },
+    {
+      "source": "NCAARoster",
+      "target": "Team",
+      "label": "teamInfo",
+      "type": "field"
+    },
+    {
+      "source": "NCAARoster",
+      "target": "Player",
+      "label": "bench1",
+      "type": "field"
+    },
+    {
+      "source": "MovePlayersResponse",
+      "target": "RosterSpot",
+      "label": "newRosterSpotForFirstPlayer",
+      "type": "field"
+    },
+    {
+      "source": "DropPlayersResponse",
+      "target": "RosterSpot",
+      "label": "rosterSpot",
+      "type": "field"
+    },
+    {
+      "source": "AssignPlayersResponse",
+      "target": "RosterSpot",
+      "label": "initialRosterSpot",
+      "type": "field"
+    },
+    {
+      "source": "Mutation_assignPlayerNewRosterSpot",
+      "target": "PlayerInput",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_assignPlayerNewRosterSpot",
+      "target": "RosterSpot",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_assignPlayerNewRosterSpot",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_movePlayers",
+      "target": "PlayerInput",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_movePlayers",
+      "target": "RosterSpot",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_movePlayers",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_swapPlayers",
+      "target": "PlayerInput",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_swapPlayers",
+      "target": "RosterSpot",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_swapPlayers",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_addPlayerToTeamRoster",
+      "target": "Position",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_addPlayerToTeamRoster",
+      "target": "RosterSpot",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_addPlayerToTeamRoster",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_removePlayerFromTeamRoster",
+      "target": "RosterSpot",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Mutation_removePlayerFromTeamRoster",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "WeeklySchedule",
+      "target": "WeeklyMatchup",
+      "label": "matchups",
+      "type": "field"
+    },
+    {
+      "source": "WeeklySchedule",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "Query_seasonWeekDateIntervals",
+      "target": "SeasonWeekDateInterval",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_seasonWeekDateIntervals",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_fetchWeeklySchedule",
+      "target": "WeeklySchedule",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Team",
+      "target": "League",
+      "label": "league",
+      "type": "field"
+    },
+    {
+      "source": "Team",
+      "target": "TargetLeague",
+      "label": "targetLeague",
+      "type": "field"
+    },
+    {
+      "source": "Query_teams",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "Query_teamById",
+      "target": "Team",
+      "label": "returns",
+      "type": "operation"
+    },
+    {
+      "source": "Query_teamById",
+      "target": "TargetLeague",
+      "label": "input",
+      "type": "argument"
+    },
+    {
+      "source": "DraftPicks",
+      "target": "Drafts",
+      "label": "draft",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Drafts",
+      "target": "DraftPicks",
+      "label": "draftpicks",
+      "type": "hasMany"
+    },
+    {
+      "source": "ActivePlayersForLeagues",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "ActivePlayersForLeagues",
+      "label": "ActivePlayersForLeagues",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftPicks",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "DraftPicks",
+      "label": "DraftPicks",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftTimeNotifications",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "DraftTimeNotifications",
+      "label": "DraftTimeNotifications",
+      "type": "hasMany"
+    },
+    {
+      "source": "Drafts",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "Drafts",
+      "label": "draft",
+      "type": "hasOne"
+    },
+    {
+      "source": "FullLeagueNotifications",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "FullLeagueNotifications",
+      "label": "FullLeagueNotification",
+      "type": "hasOne"
+    },
+    {
+      "source": "LeagueInvites",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "LeagueInvites",
+      "label": "LeagueInvites",
+      "type": "hasMany"
+    },
+    {
+      "source": "NewLeagueCommissionerNotifications",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "NewLeagueCommissionerNotifications",
+      "label": "NewLeagueCommissionerNotifications",
+      "type": "hasMany"
+    },
+    {
+      "source": "Seasons",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "Seasons",
+      "label": "Seasons",
+      "type": "hasMany"
+    },
+    {
+      "source": "Leagues",
+      "target": "Seasons",
+      "label": "currentSeason",
+      "type": "hasOne"
+    },
+    {
+      "source": "TeamLetterMaps",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "TeamLetterMaps",
+      "label": "TeamLetterMaps",
+      "type": "hasMany"
+    },
+    {
+      "source": "Teams",
+      "target": "Leagues",
+      "label": "league",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Leagues",
+      "target": "Teams",
+      "label": "teams",
+      "type": "hasMany"
+    },
+    {
+      "source": "ActivePlayersForLeagues",
+      "target": "Players",
+      "label": "player",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Players",
+      "target": "ActivePlayersForLeagues",
+      "label": "ActivePlayersForLeagues",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftPicks",
+      "target": "Players",
+      "label": "player",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Players",
+      "target": "DraftPicks",
+      "label": "DraftPicks",
+      "type": "hasMany"
+    },
+    {
+      "source": "NllRosters",
+      "target": "Players",
+      "label": "bench1",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Players",
+      "target": "NllRosters",
+      "label": "NLLRosters",
+      "type": "hasMany"
+    },
+    {
+      "source": "PllRosters",
+      "target": "Players",
+      "label": "lsm",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Players",
+      "target": "PllRosters",
+      "label": "PLLRosters",
+      "type": "hasMany"
+    },
+    {
+      "source": "Statistics",
+      "target": "Players",
+      "label": "player",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Players",
+      "target": "Statistics",
+      "label": "statistics",
+      "type": "hasOne"
+    },
+    {
+      "source": "Drafts",
+      "target": "Seasons",
+      "label": "season",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Seasons",
+      "target": "Drafts",
+      "label": "Drafts",
+      "type": "hasMany"
+    },
+    {
+      "source": "Seasons",
+      "target": "Drafts",
+      "label": "draft",
+      "type": "hasOne"
+    },
+    {
+      "source": "TeamLetterMaps",
+      "target": "Seasons",
+      "label": "season",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Seasons",
+      "target": "TeamLetterMaps",
+      "label": "TeamLetterMaps",
+      "type": "hasMany"
+    },
+    {
+      "source": "Seasons",
+      "target": "TeamLetterMaps",
+      "label": "teamLetterMap",
+      "type": "hasOne"
+    },
+    {
+      "source": "StatLines",
+      "target": "Statistics",
+      "label": "statistic",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Statistics",
+      "target": "StatLines",
+      "label": "StatLines",
+      "type": "hasMany"
+    },
+    {
+      "source": "Statistics",
+      "target": "StatLines",
+      "label": "statLineCurrentSeason",
+      "type": "hasOne"
+    },
+    {
+      "source": "XDevNllStatLines",
+      "target": "Statistics",
+      "label": "statistic",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Statistics",
+      "target": "XDevNllStatLines",
+      "label": "XDev_NLLStatLines",
+      "type": "hasMany"
+    },
+    {
+      "source": "XDevPllStatLines",
+      "target": "Statistics",
+      "label": "statistic",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Statistics",
+      "target": "XDevPllStatLines",
+      "label": "XDev_PLLStatLines",
+      "type": "hasMany"
+    },
+    {
+      "source": "ActivePlayersForLeagues",
+      "target": "Teams",
+      "label": "team",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Teams",
+      "target": "ActivePlayersForLeagues",
+      "label": "ActivePlayersForLeagues",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftPicks",
+      "target": "Teams",
+      "label": "team",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Teams",
+      "target": "DraftPicks",
+      "label": "DraftPicks",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftTimeNotifications",
+      "target": "Teams",
+      "label": "team",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Teams",
+      "target": "DraftTimeNotifications",
+      "label": "DraftTimeNotifications",
+      "type": "hasMany"
+    },
+    {
+      "source": "PllRosters",
+      "target": "Teams",
+      "label": "team",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Teams",
+      "target": "PllRosters",
+      "label": "pllRoster",
+      "type": "hasOne"
+    },
+    {
+      "source": "Teams",
+      "target": "NllRosters",
+      "label": "nllRoster",
+      "type": "hasOne"
+    },
+    {
+      "source": "TeamLetterMaps",
+      "target": "Teams",
+      "label": "teamA_Team",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Teams",
+      "target": "TeamLetterMaps",
+      "label": "TeamLetterMaps",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftTimeNotifications",
+      "target": "Users",
+      "label": "user",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Users",
+      "target": "DraftTimeNotifications",
+      "label": "DraftTimeNotifications",
+      "type": "hasMany"
+    },
+    {
+      "source": "NewLeagueCommissionerNotifications",
+      "target": "Users",
+      "label": "commissioner",
+      "type": "belongsTo"
+    },
+    {
+      "source": "Users",
+      "target": "NewLeagueCommissionerNotifications",
+      "label": "NewLeagueCommissionerNotifications",
+      "type": "hasMany"
+    },
+    {
+      "source": "DraftPicks",
+      "target": "DraftPick",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "DraftTimeNotifications",
+      "target": "DraftTimeNotification",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Drafts",
+      "target": "Draft",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "LeagueInvites",
+      "target": "LeagueInvite",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Leagues",
+      "target": "League",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Players",
+      "target": "Player",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Seasons",
+      "target": "Season",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "StatLines",
+      "target": "StatLine",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Statistics",
+      "target": "Statistics",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "TeamLetterMaps",
+      "target": "TeamLetterMap",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Teams",
+      "target": "Team",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    },
+    {
+      "source": "Users",
+      "target": "User",
+      "label": "exposes",
+      "type": "modelToGraphQL"
+    }
+  ]
+}

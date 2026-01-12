@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "id": "CLIENT",
+      "label": "CLIENT",
+      "type": "category",
+      "group": "CLIENT",
+      "color": "#38BDF8",
+      "size": 35
+    },
+    {
+      "id": "GRAPHQL_TYPES",
+      "label": "GraphQL Types",
+      "type": "category",
+      "group": "GRAPHQL",
+      "color": "#EC4899",
+      "size": 35
+    },
+    {
+      "id": "SERVER",
+      "label": "SERVER",
+      "type": "category",
+      "group": "SERVER",
+      "color": "#A78BFA",
+      "size": 35
+    },
+    {
+      "id": "navigation",
+      "label": "_navigation",
+      "type": "subcategory",
+      "group": "CLIENT",
+      "color": "#F59E0B",
+      "size": 18
+    },
+    {
+      "id": "shared",
+      "label": "_shared",
+      "type": "subcategory",
+      "group": "CLIENT",
+      "color": "#8B5CF6",
+      "size": 18
+    },
+    {
+      "id": "feature_folders",
+      "label": "Feature Folders",
+      "type": "subcategory",
+      "group": "CLIENT",
+      "color": "#F87171",
+      "size": 22
+    },
+    {
+      "id": "api",
+      "label": "API",
+      "type": "subcategory",
+      "group": "CLIENT",
+      "color": "#4ADE80",
+      "size": 18
+    },
+    {
+      "id": "queries",
+      "label": "Queries",
+      "type": "item",
+      "group": "GRAPHQL",
+      "color": "#A8E6CF",
+      "size": 14
+    },
+    {
+      "id": "mutations",
+      "label": "Mutations",
+      "type": "item",
+      "group": "GRAPHQL",
+      "color": "#DDA0DD",
+      "size": 14
+    },
+    {
+      "id": "types",
+      "label": "Types",
+      "type": "item",
+      "group": "GRAPHQL",
+      "color": "#FF6B6B",
+      "size": 14
+    },
+    {
+      "id": "graphql",
+      "label": "graphql/",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#6366F1",
+      "size": 22
+    },
+    {
+      "id": "domain_dirs",
+      "label": "Domain Dirs",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#6366F1",
+      "size": 20
+    },
+    {
+      "id": "models",
+      "label": "models",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#7B68EE",
+      "size": 18
+    },
+    {
+      "id": "helpers",
+      "label": "_helpers",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#0891B2",
+      "size": 16
+    },
+    {
+      "id": "services",
+      "label": "_services",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#059669",
+      "size": 16
+    },
+    {
+      "id": "database",
+      "label": "database",
+      "type": "subcategory",
+      "group": "SERVER",
+      "color": "#F59E0B",
+      "size": 20
+    }
+  ],
+  "links": [
+    {
+      "source": "navigation",
+      "target": "CLIENT",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "shared",
+      "target": "CLIENT",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "feature_folders",
+      "target": "CLIENT",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "api",
+      "target": "CLIENT",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "queries",
+      "target": "GRAPHQL_TYPES",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "mutations",
+      "target": "GRAPHQL_TYPES",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "types",
+      "target": "GRAPHQL_TYPES",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "graphql",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "domain_dirs",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "models",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "helpers",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "services",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "database",
+      "target": "SERVER",
+      "label": "part of",
+      "type": "containment"
+    },
+    {
+      "source": "api",
+      "target": "GRAPHQL_TYPES",
+      "label": "uses types",
+      "type": "dataFlow"
+    },
+    {
+      "source": "graphql",
+      "target": "GRAPHQL_TYPES",
+      "label": "defines",
+      "type": "dataFlow"
+    },
+    {
+      "source": "feature_folders",
+      "target": "shared",
+      "label": "imports from",
+      "type": "dependency"
+    },
+    {
+      "source": "navigation",
+      "target": "feature_folders",
+      "label": "routes to",
+      "type": "dependency"
+    },
+    {
+      "source": "domain_dirs",
+      "target": "models",
+      "label": "queries",
+      "type": "dependency"
+    },
+    {
+      "source": "domain_dirs",
+      "target": "helpers",
+      "label": "uses",
+      "type": "dependency"
+    },
+    {
+      "source": "domain_dirs",
+      "target": "services",
+      "label": "uses",
+      "type": "dependency"
+    },
+    {
+      "source": "models",
+      "target": "database",
+      "label": "persisted to",
+      "type": "dataFlow"
+    },
+    {
+      "source": "domain_dirs",
+      "target": "graphql",
+      "label": "organized in",
+      "type": "containment"
+    }
+  ]
+}

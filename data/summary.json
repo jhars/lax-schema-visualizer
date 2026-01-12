@@ -1,0 +1,17 @@
+{
+  "generated": "2026-01-12T21:04:22.548Z",
+  "counts": {
+    "graphqlOnly": {
+      "nodes": 63,
+      "links": 82
+    },
+    "graphqlModels": {
+      "nodes": 110,
+      "links": 155
+    },
+    "fullStack": {
+      "nodes": 127,
+      "links": 172
+    }
+  }
+}
